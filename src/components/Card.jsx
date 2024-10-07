@@ -9,7 +9,7 @@ function Card({ title, content, titleColor, contentColor }) {
   };
 
   return (
-    <div className="border border-gray-300 rounded-md p-4 shadow-md">
+    <div className=" bg-slate-200 border border-gray-300 rounded-md p-4 m-4 shadow-md">
       <h3 className={`font-bold text-lg ${cardColor[titleColor]}`}>{title}</h3>
       <p className={cardColor[contentColor]}>{content}</p>
     </div>

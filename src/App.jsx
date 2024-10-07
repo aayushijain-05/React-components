@@ -38,26 +38,35 @@ const App = () => {
 
   return (
     <div className="p-8">
-      
-    <div>
-    <Badge count={5}
-    color="red"
-    >Notifications</Badge>
+      <div className='flex flex-row shrink-0'>
+      <div>
+      <Badge count={5} color="blue">
+        <div className='bg-blue-600 m-4 p-4 border rounded-md'>
+          Notifications
+        </div>
+      </Badge>
     </div>
     <div>
-    <Badge count={5} 
-    color="yellow">Notifications</Badge>
+      <Badge count={5} color="green">
+        <div className='bg-green-600 m-4 p-4 border rounded-md'>
+          Notifications
+        </div>
+      </Badge>
     </div>
     <div>
-    <Badge count={5}  
-    color="blue">Notifications</Badge>
+      <Badge count={5} color="yellow">
+        <div className='bg-yellow-600 m-4 p-4 border rounded-md'>
+          Notifications
+        </div>
+      </Badge>
+    </div>
     </div>
       
       
       
       <Select />
  
-      <Tooltip message="This is a tooltip">Hover me!</Tooltip>
+      <Tooltip message="This is a tooltip ">Hover me!</Tooltip>
       <ToggleSwitch isOn={isToggleOn} handleToggle={handleToggle} />
       <Textarea />
        <Tabs /> 
@@ -71,18 +80,25 @@ const App = () => {
     
       <div className="py-8">
       <Popover content="This is the popover content!">
-      <h1 className='text-blue-400 font-semibold'>Popover</h1>
+      <h1 className='text-indigo-800 font-semibold mb-2'>Popover</h1>
         <button className="px-4 py-2 bg-blue-500 text-white rounded-md">
           Click Me
         </button>
       </Popover>
     </div>
+    <div className='flex flex-row shrink-0'>
+    <h1 className='text-indigo-800 font-semibold m-5'>Submit button</h1>
       <Button text="Submit" />
+      <Button text="Submit" />
+      </div>
+      
+      <div className='flex flex-row shrnik-0 '>
       <Card
             title="Card Title"
             titleColor="yellow"
             contentColor={`blue`}
             content="This is the card content."
+            
           />
           <Card
             title="Card Title"
@@ -94,14 +110,17 @@ const App = () => {
             titleColor="red"
             content="This is the card content."
           />
+          </div>
+          <br></br>
       <Carousel  /> 
+      <br></br>
       <Checkbox
         checked={checkboxChecked}
         onChange={() => setCheckboxChecked(!checkboxChecked)}
         label="Check this box"
       />
        <div className="py-8">
-       <h1 className='text-blue-400 font-semibold'>Radio button</h1>
+       <h1 className='text-indigo-800 font-semibold'>Radio button</h1>
       <h2 className="text-lg font-semibold mb-4">Choose an option:</h2>
       <Radio 
         value={radioValue} 

@@ -5,7 +5,7 @@ const Accordion = () => {
 
   return (
     <div className="mb-4">
-      <h1 className='text-blue-400 font-semibold'>Accordion</h1>
+      <h1 className='text-indigo-800 font-semibold'>Accordion</h1>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full text-left px-4 py-2 bg-gray-300 rounded-md"

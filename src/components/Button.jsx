@@ -5,14 +5,17 @@ const Button = () => {
 
   const changeColor = () => {
     
-    setBgColor((prevColor) =>
-      prevColor === 'bg-blue-600' ? 'bg-green-600' : 'bg-blue-600'
-    );
+    setBgColor((prevColor) => {
+      if (prevColor === 'bg-blue-600') return 'bg-green-600';
+      if (prevColor === 'bg-green-600') return 'bg-red-600';
+      return 'bg-blue-600';
+    });
+    
   };
 
   return (
     <div>
-      <h1 className='text-blue-400 font-semibold'>Submit button</h1>
+      
       <button
         className={`${bgColor} rounded-xl p-3 m-4 text-white`}
         onClick={changeColor}

@@ -13,7 +13,7 @@ const Tabs = () => {
 
   return (
     <div className="mb-4">
-      <h1 className='text-blue-400 font-semibold'>Tabs</h1>
+      <h1 className='text-indigo-800 font-semibold'>Tabs</h1>
       <div className="flex space-x-4">
         {tabs.map((tab, index) => (
           <button

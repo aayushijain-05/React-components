@@ -2,7 +2,7 @@
 
 const ToggleSwitch = ({ isOn, handleToggle }) => (
   <div className="my-6">
-    <h1 className='text-blue-400 font-semibold'>Toggle switch</h1>
+    <h1 className='text-indigo-800 font-semibold mb-2'>Toggle switch</h1>
   <div
   
     onClick={handleToggle}

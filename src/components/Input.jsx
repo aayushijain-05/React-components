@@ -4,10 +4,10 @@
 const Input = ({ placeholder, type = "text", value, onChange }) => {
   return (
     <div>
-      <h1 className='text-blue-400 font-semibold'>Input</h1>
+      <h1 className='text-indigo-800 font-semibold mb-2'>Input</h1>
     <input
       type={type}
-      className="border rounded-md p-2 w-full"
+      className="border p-2 w-full rounded-md hover:border-indigo-500 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500 outline-none"
       placeholder={placeholder}
       value={value}
       onChange={onChange}

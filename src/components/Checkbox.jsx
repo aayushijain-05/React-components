@@ -3,7 +3,7 @@
 const Checkbox = ({ checked, onChange, label }) => {
   return (
     <div>
-      <h1 className='text-blue-400 font-semibold'>Checkbox</h1>
+      <h1 className='text-indigo-800 font-semibold'>Checkbox</h1>
       <label className="block mb-4">
         <input
           type="checkbox"

@@ -17,7 +17,7 @@ const Select = () => {
 
   return (
     <div className="mb-4">
-      <h1 className='text-blue-400 font-semibold'>Select options</h1>
+      <h1 className='text-indigo-800 font-semibold my-3'>Select options</h1>
       <select
         value={value}
         onChange={(e) => setValue(e.target.value)}

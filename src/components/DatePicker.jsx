@@ -5,7 +5,7 @@ const DatePicker = () => {
 
   return (
     <div>
-    <h1 className='text-blue-400 font-semibold'>Date Picker</h1>
+    <h1 className='text-indigo-800 font-semibold'>Date Picker</h1>
     <input
       type="date"
       value={date}
