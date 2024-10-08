@@ -1,19 +1,36 @@
 /* eslint-disable react/prop-types */
 
 
-const Progress = ({ progress }) => (
-  <div>
-  <h1 className='text-indigo-800 font-semibold'>Progress</h1>
+import { useState } from 'react';
 
-  <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
+const Progress = () => {
+  const [progress, setProgress] = useState(0);
+
+  const handleChange = (e) => {
     
-    <div
-      className="bg-green-500 h-4 rounded-full"
-      style={{ width: `${progress}%` }}
-    />
-  </div>
-  </div>
-);
+    const value = Math.max(0, Math.min(100, Number(e.target.value)));
+    setProgress(value);
+  };
 
+  return (
+    <div className="mr-40">
+      <h1 className="w-40 text-indigo-800 font-semibold">Progress</h1>
+      <input
+        type="number"
+        value={progress}
+        onChange={handleChange}
+        className="border rounded p-2 mb-4 w-20"
+        placeholder="Enter progress"
+      />
+      <div className="min-w-min bg-gray-200 rounded-full h-4 mb-4">
+        <div
+          className="bg-green-500 h-4 rounded-full"
+          style={{ width: `${progress}%` }}
+        />
+      </div>
+      <p>{progress}%</p>
+    </div>
+  );
+};
 
 export default Progress;

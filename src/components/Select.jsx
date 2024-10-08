@@ -16,7 +16,7 @@ const Select = () => {
   };
 
   return (
-    <div className="mb-4">
+    <div className="mb-4 p-4">
       <h1 className='text-indigo-800 font-semibold my-3'>Select options</h1>
       <select
         value={value}

@@ -19,6 +19,7 @@ import Accordion from './components/Accordion';
 
 
 const App = () => {
+  
   const [isToggleOn, setIsToggleOn] = useState(false);
   const [checkboxChecked, setCheckboxChecked] = useState(false);
   const [radioValue, setRadioValue] = useState('option1');
@@ -130,8 +131,11 @@ const App = () => {
       <p className="mt-4">Selected Value: {radioValue}</p>
     </div>
       <DatePicker />
-      <Progress progress={50} />
-      <Accordion /> 
+      <div className='flex flex-row  w-full max-w-max'>
+      <Progress progress={50}  />
+      <Accordion />
+      </div>
+       
     </div>
   );
 };
