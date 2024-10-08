@@ -11,8 +11,8 @@ const Carousel = () => {
     <div className="relative w-full h-64 bg-gray-200 mb-8">
        <h1 className='text-indigo-800 font-semibold'>Carousel</h1>
       <img src={images[activeIndex]} alt={`Slide ${activeIndex}`} className="object-cover w-full h-full" />
-      <button onClick={prevImage} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2">Prev</button>
-      <button onClick={nextImage} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2">Next</button>
+      <button onClick={prevImage} className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2"><span><i className="fa-solid fa-chevron-left p-2"/></span></button>
+      <button onClick={nextImage} className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2"><span><i className="fa-solid fa-chevron-right p-2"/></span></button>
     </div>
   );
 };
